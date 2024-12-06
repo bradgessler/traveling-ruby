@@ -84,10 +84,10 @@ parse_options "$@"
 ##########
 
 GEMS_TO_TEST=(
-	rexml 
-	nio 
-	socket 
-	rinda/ring 
+	rexml
+	nio
+	socket
+	rinda/ring
 	rinda/tuplespace
 	openssl readline rugged charlock_holmes unf_ext bcrypt RedCloth
 	eventmachine escape_utils json nokogiri ffi pg
@@ -97,12 +97,13 @@ GEMS_TO_TEST=(
 	)
 GEMS_TO_FAIL=(
 	"win32ole"
-	) 
+	)
 GEMS_TO_SKIP=(
 	"sinatra"
-	"nio4r" 
-	test-unit 
+	"nio4r"
+	test-unit
 	"rinda"
+	io-event
 )
 
 if [[ "$BUILD_OUTPUT_DIR" == *"3.0."* ]]; then
@@ -162,5 +163,5 @@ else
 	printf '%s\n' "${ERRORS[@]}"
 	echo "The following gems failed to load:" > "$BUILD_OUTPUT_DIR/test_report"
 	printf '%s\n' "${ERRORS[@]}" >> "$BUILD_OUTPUT_DIR/test_report"
-	exit 1 
+	exit 1
 fi

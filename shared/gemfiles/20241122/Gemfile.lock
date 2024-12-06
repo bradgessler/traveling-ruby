@@ -11,7 +11,14 @@ GEM
     eventmachine (1.2.7)
     fast-stemmer (1.0.2)
     ffi (1.17.0)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     hitimes (3.0.0)
+    io-event (1.7.4)
     json (2.8.2)
     kgio (2.11.4)
     mini_portile2 (2.8.6)
@@ -64,6 +71,7 @@ DEPENDENCIES
   fast-stemmer
   ffi
   hitimes
+  io-event
   json
   kgio
   mini_portile2 (= 2.8.6)
